@@ -1,0 +1,76 @@
+/**
+|============================
+| block 4
+|============================
+*/
+
+.list__benefits {
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.benefit {
+  &__link {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
+  &__cards {
+    width: 270px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+  }
+  &__text {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+}
+
+.list__work {
+  list-style: none;
+  gap: 30px;
+
+  &--overlay {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.item__list__work {
+  position: relative;
+}
+
+.title__list__work--overlay {
+  font-family: var(--main-fonts);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}

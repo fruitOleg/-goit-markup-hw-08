@@ -1,0 +1,80 @@
+/**
+|============================
+| block 4
+|============================
+*/
+
+.backdrop {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  transition: opacity var(--cubic), visibility var(--cubic);
+
+  &.is__hidden {
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+.modal {
+  position: relative;
+  width: 530px;
+  min-height: 580px;
+
+  background: #ffffff;
+  border-radius: 4px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+
+  &__icon {
+    transition: var(--cubic);
+
+    .modal__btn:hover &,
+    .modal__btn:focus & {
+      fill: var(--accent-text-color);
+    }
+  }
+}
+.modal__title {
+  font-family: var(--main-fonts);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #212121;
+
+  margin-bottom: 12px;
+  display: block;
+  text-align: center;
+}
