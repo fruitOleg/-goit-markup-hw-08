@@ -18,6 +18,14 @@
 }
 .list__team {
   gap: 30px;
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 .team__text {
   margin-top: 10px;
@@ -31,11 +39,37 @@
 
   &__card {
     padding: 30px 20px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 }
+.team__img {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 460px;
+  }
 
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 260px;
+  }
+}
 .bg__cards {
-  width: 270px;
   padding: auto;
 
   background: #ffffff;

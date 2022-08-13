@@ -8,6 +8,14 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 
 .clients__link {
@@ -21,6 +29,18 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border var(--cubic);
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 
   &:hover,
   &:focus {
