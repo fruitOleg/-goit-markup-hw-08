@@ -3,7 +3,6 @@
 | block 4
 |============================
 */
-
 .wrap__portfolio--flex {
   padding: 0;
   margin: 0;
@@ -26,6 +25,45 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+.portfolio__item {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio__img {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .first_card {
+    display: block;
+    height: 146px;
+  }
 }
 
 .text__card {
@@ -33,6 +71,7 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 .portfolio__title {
   margin-bottom: 4px;
@@ -59,10 +98,6 @@
     letter-spacing: 0.03em;
     color: #ffffff;
   }
-}
-.portfolio__item {
-  position: relative;
-  overflow: hidden;
 }
 .portfolio--overlay {
   position: absolute;
