@@ -1443,7 +1443,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .list__foot__item {
-    display: inline-block;
     padding-left: 0;
   }
 }
