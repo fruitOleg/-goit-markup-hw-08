@@ -1441,6 +1441,12 @@ img {
 .list__foot__item:last-child {
   margin-bottom: 0;
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .list__foot__item {
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .list__foot__item {
     padding-left: 0;

@@ -58,6 +58,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    padding-left: auto;
+    padding-right: auto;
+  }
   @media screen and (min-width: 1200px) {
     padding-left: 0;
   }
