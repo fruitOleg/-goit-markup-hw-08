@@ -405,6 +405,10 @@ img {
 | block 3
 |============================
 */
+.foot__email__block {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .foot__email__block {
     margin-left: auto;
@@ -1379,12 +1383,25 @@ img {
   background: var(--dark-bg-color);
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .blocks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blocks {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1477,8 +1494,6 @@ img {
 
 .foot--rigth__block {
   margin-left: 70px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 @media screen and (min-width: 480px) and (max-width: 1200px) {
   .foot--rigth__block {
