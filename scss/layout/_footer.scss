@@ -9,15 +9,25 @@
   padding-bottom: 60px;
   background: var(--dark-bg-color);
 }
-.foot--align {
-  padding-left: 0;
+.blocks {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+}
+.foot--left__block {
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
 }
 .logo__foot {
   margin-bottom: 20px;
-  display: inline-block;
   font-family: var(--logo-fonts);
   font-weight: 700;
-  font-size: 26px;
   line-height: 1.1;
   text-decoration: none;
   color: var(--accent-text-color);
@@ -25,14 +35,36 @@
   &--accent {
     color: #ffffff;
   }
-}
 
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    display: block;
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    padding-left: 0;
+    font-size: 26px;
+  }
+}
+.list__foot--align {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    justify-items: center;
+  }
+}
 .list__foot__item {
   margin-top: 0;
   margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    padding-left: 0;
+  }
 }
 .address {
-  display: block;
+   display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -42,7 +74,7 @@
   text-decoration: none;
 }
 .contacts__foot {
-  display: block;
+   display: block;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -51,15 +83,17 @@
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
-.blocks {
-  align-items: baseline;
-}
+
 .foot--rigth__block {
   margin-left: 70px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
 }
 .foot__title {
-  padding-left: 0;
-  display: inline-block;
   margin-bottom: 20px;
   text-align: center;
   font-weight: 700;
@@ -68,6 +102,16 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    padding-left: auto;
+    padding-right: auto;
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    padding-left: 0;
+  }
 }
 .social__list__foot {
   align-items: center;
@@ -89,7 +133,6 @@
     background-color: #2196f3;
   }
 }
-
 .social__icon__foot {
   fill: #ffffff;
 }
