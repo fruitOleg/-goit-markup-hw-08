@@ -405,10 +405,6 @@ img {
 | block 3
 |============================
 */
-.foot__email__block {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .foot__email__block {
     margin-left: auto;
@@ -440,6 +436,8 @@ img {
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .foot__email__label {
     width: 450px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -483,7 +481,7 @@ img {
 .foot__email__btn__icon {
   fill: #fff;
 }
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .foot__email__btn {
     margin-top: 20px;
   }
@@ -491,6 +489,7 @@ img {
 @media screen and (min-width: 1200px) {
   .foot__email__btn {
     margin-right: 12px;
+    margin-top: 0;
   }
 }
 
@@ -1435,6 +1434,7 @@ img {
   .logo__foot {
     display: block;
     font-size: 24px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1447,7 +1447,7 @@ img {
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .list__foot--align {
-    justify-items: center;
+    text-align: center;
   }
 }
 
@@ -1457,12 +1457,6 @@ img {
 }
 .list__foot__item:last-child {
   margin-bottom: 0;
-}
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .list__foot__item {
-    padding-left: auto;
-    padding-right: auto;
-  }
 }
 @media screen and (min-width: 1200px) {
   .list__foot__item {
