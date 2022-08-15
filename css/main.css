@@ -683,10 +683,28 @@ img {
 .logo__head--accent {
   color: var(--main-text-color);
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .logo__head {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 60px;
+  }
+}
 
 .nav {
   margin-left: 93px;
   gap: 50px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+    margin-right: 0;
+    margin-left: 88px;
+  }
 }
 .nav__link {
   padding-top: 32px;
@@ -721,7 +739,25 @@ img {
 
 .contacts {
   margin-left: auto;
-  gap: 50px;
+  gap: 30px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    gap: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: auto;
+  }
 }
 .contacts__item {
   display: -webkit-box;
@@ -1452,7 +1488,7 @@ img {
 .logo__foot--accent {
   color: #ffffff;
 }
-@media screen and (min-width: 480px) and (max-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .logo__foot {
     display: block;
     font-size: 24px;
@@ -1467,7 +1503,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .list__foot--align {
     text-align: center;
   }
@@ -1542,7 +1578,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
 }
-@media screen and (min-width: 480px) and (max-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .foot__title {
     display: block;
   }
