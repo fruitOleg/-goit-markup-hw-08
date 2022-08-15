@@ -10,13 +10,13 @@
   background: var(--dark-bg-color);
 }
 .blocks {
-  @media screen and (min-width: 480px)  {
+  @media screen and (min-width: 480px) {
     flex-direction: column;
   }
-  @media screen and (min-width: 768px){
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-items: baseline;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
     align-items: baseline;
@@ -41,7 +41,7 @@
     color: #ffffff;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
     display: block;
     font-size: 24px;
     text-align: center;
@@ -53,7 +53,7 @@
   }
 }
 .list__foot--align {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
     text-align: center;
   }
 }
@@ -64,16 +64,12 @@
   &:last-child {
     margin-bottom: 0;
   }
-  @media screen and (min-width: 480px) and (max-width: 1200px) {
-  
-
-  }
   @media screen and (min-width: 1200px) {
     padding-left: 0;
   }
 }
 .address {
-   display: block;
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -83,7 +79,7 @@
   text-decoration: none;
 }
 .contacts__foot {
-   display: block;
+  display: block;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -95,11 +91,19 @@
 
 .foot--rigth__block {
   margin-left: 70px;
-  @media screen and (min-width: 480px) and (max-width: 1200px) {
+  @media screen and (min-width: 480px) {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    
+  }
+  @media screen and (min-width: 758px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 102px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: auto;
   }
 }
 .foot__title {
@@ -112,9 +116,7 @@
   text-transform: uppercase;
   color: #ffffff;
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    padding-left: auto;
-    padding-right: auto;
+  @media screen and (min-width: 480px) and (max-width: 1200px) {
     display: block;
   }
   @media screen and (min-width: 1200px) {
