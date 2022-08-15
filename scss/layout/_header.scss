@@ -3,32 +3,13 @@
 | block 4
 |============================
 */
-
-.logo__head {
-  font-family: var(--logo-fonts);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1;
-  text-decoration: none;
-  color: var(--accent-text-color);
-
-  &--accent {
-    color: var(--main-text-color);
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-   padding-top: 16px;
-   padding-bottom: 16px;
-   height: 60px;
-  }
-}
-
 .nav {
   margin-left: 93px;
   gap: 50px;
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
-   display: none;
+    display: none;
+    justify-content: space-between;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 0;
@@ -71,13 +52,50 @@
     }
   }
 }
+.logo__head {
+  font-family: var(--logo-fonts);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
+  text-decoration: none;
+  color: var(--accent-text-color);
+
+  &--accent {
+    color: var(--main-text-color);
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 60px;
+    
+  }
+}
+.menu__burger__btn {
+   height: 40px;
+   width: 40px;
+  border: none;
+  background-color: transparent;
+  padding: 12px 8px;
+  margin-left: 276px;
+
+  &__icon {
+    .menu__burger__btn:hover &,
+    .menu__burger__btn:focus & {
+      fill: var(--accent-text-color);
+    }
+  }
+  @media screen and (min-width: 758px) {
+    display: none;
+  }
+}
 
 .contacts {
   margin-left: auto;
   gap: 30px;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-   display: none;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: none;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     gap: 10px;
