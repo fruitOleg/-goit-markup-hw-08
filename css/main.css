@@ -1564,9 +1564,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.foot--rigth__block {
-  margin-left: 70px;
-}
 @media screen and (min-width: 480px) {
   .foot--rigth__block {
     margin-bottom: 60px;
