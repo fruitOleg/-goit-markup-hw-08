@@ -407,15 +407,11 @@ img {
 */
 @media screen and (min-width: 480px) {
   .foot__email__block {
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
   }
 }
 @media screen and (min-width: 758px) {
   .foot__email__block {
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
   }
 }
@@ -747,6 +743,10 @@ img {
   background-color: transparent;
   padding: 12px 8px;
   margin-left: 276px;
+}
+.menu__burger__btn__icon {
+  -webkit-transition: fill var(--cubic);
+  transition: fill var(--cubic);
 }
 .menu__burger__btn:hover .menu__burger__btn__icon, .menu__burger__btn:focus .menu__burger__btn__icon {
   fill: var(--accent-text-color);
@@ -1479,6 +1479,8 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1491,8 +1493,6 @@ img {
 
 @media screen and (min-width: 480px) and (max-width: 1200px) {
   .foot--left__block {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 60px;
   }
 }
@@ -1569,15 +1569,11 @@ img {
 }
 @media screen and (min-width: 480px) {
   .foot--rigth__block {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 758px) {
   .foot--rigth__block {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 102px;
   }
 }

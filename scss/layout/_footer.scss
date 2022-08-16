@@ -17,6 +17,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
+     justify-content: space-around;
   }
   @media screen and (min-width: 1200px) {
     align-items: baseline;
@@ -24,8 +25,6 @@
 }
 .foot--left__block {
   @media screen and (min-width: 480px) and (max-width: 1200px) {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 60px;
   }
 }
@@ -92,13 +91,9 @@
 .foot--rigth__block {
   margin-left: 70px;
   @media screen and (min-width: 480px) {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 60px;
   }
   @media screen and (min-width: 758px) {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 102px;
   }
   @media screen and (min-width: 1200px) {
