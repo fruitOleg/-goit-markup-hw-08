@@ -629,24 +629,46 @@ img {
 .modal__licens__text {
   font-family: var(--main-fonts);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   color: #757575;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
+@media screen and (min-width: 480px) {
+  .modal__licens__text {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 3%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__licens__text {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+}
 
 .modal__licens__link {
   font-family: var(--main-fonts);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   color: #2196f3;
   text-underline-position: under;
+}
+@media screen and (min-width: 480px) {
+  .modal__licens__link {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 3%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__licens__link {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal__form__btn {
@@ -688,7 +710,7 @@ img {
 .menu__overlay.is-open {
   opacity: 1;
   pointer-events: initial;
-  visibility: hidden;
+  visibility: visible;
 }
 @media screen and (min-width: 758px) {
   .menu__overlay {

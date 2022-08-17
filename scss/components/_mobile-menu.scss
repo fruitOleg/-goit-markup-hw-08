@@ -12,12 +12,13 @@
   pointer-events: none;
   visibility: hidden;
   transition: opacity var(--cubic), visibility var(--cubic);
- 
+
   &.is-open {
     opacity: 1;
     pointer-events: initial;
-    visibility: hidden;
-  } 
+    visibility: visible;
+  }
+
   @media screen and (min-width: 758px) {
     display: none;
   }
@@ -30,7 +31,6 @@
   max-width: 480px;
   padding: 48px 40px;
   background-color: #ffffff;
-
   transform: translateX(100%);
   transition: transform var(--cubic);
 
