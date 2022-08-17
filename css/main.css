@@ -1862,8 +1862,8 @@ img {
   cursor: pointer;
 }
 .modal__btn__icon {
-  -webkit-transition: var(--cubic);
-  transition: var(--cubic);
+  -webkit-transition: fill var(--cubic);
+  transition: fill var(--cubic);
 }
 .modal__btn:hover .modal__btn__icon, .modal__btn:focus .modal__btn__icon {
   fill: var(--accent-text-color);

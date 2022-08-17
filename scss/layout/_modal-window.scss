@@ -58,7 +58,7 @@
   cursor: pointer;
 
   &__icon {
-    transition: var(--cubic);
+    transition: fill var(--cubic);
 
     .modal__btn:hover &,
     .modal__btn:focus & {
