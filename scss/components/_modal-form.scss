@@ -44,7 +44,7 @@
   position: absolute;
   bottom: 10px;
   left: 15px;
-  transition: var(--cubic);
+  transition: fill var(--cubic);
 
   .modal__label:hover &,
   .modal__label:focus-within & {
