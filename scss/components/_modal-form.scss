@@ -4,9 +4,8 @@
 |============================
 */
 
-.modal__form {
-  padding: 40px;
-}
+// .modal__form {
+// }
 .modal__label {
   display: block;
   text-align: left;
@@ -33,7 +32,7 @@
   padding-left: 42px;
   width: 100%;
   outline: transparent;
-  transition: var(--cubic);
+  transition: color var(--cubic);
   .modal__label:hover &,
   .modal__label:focus-within & {
     border-color: var(--accent-text-color);
@@ -55,7 +54,7 @@
   padding-left: 16px;
   padding-top: 12px;
   height: 120px;
-  width: 450px;
+
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -73,15 +72,25 @@
     border-color: var(--accent-text-color);
     outline: transparent;
   }
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 758px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 450px;
+  }
 }
 
 .modal__checkbox {
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
-.modal__checkbox:focus-within {
-  fill: var(--accent-text-color);
+
+  &:focus-within {
+    fill: var(--accent-text-color);
+  }
 }
 
 .icon__licens--checked {
@@ -104,6 +113,7 @@
   letter-spacing: 0.03em;
   color: #757575;
   user-select: none;
+  
 }
 .modal__licens__link {
   font-family: var(--main-fonts);

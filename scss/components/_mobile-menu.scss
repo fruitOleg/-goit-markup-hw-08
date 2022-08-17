@@ -12,14 +12,14 @@
   pointer-events: none;
   visibility: hidden;
   transition: opacity var(--cubic), visibility var(--cubic);
-
-  @media screen and (min-width: 758px) {
-    display: none;
-  }
-  &.is__open {
+ 
+  &.is-open {
     opacity: 1;
     pointer-events: initial;
     visibility: hidden;
+  } 
+  @media screen and (min-width: 758px) {
+    display: none;
   }
 }
 .menu__container {
@@ -31,10 +31,11 @@
   padding: 48px 40px;
   background-color: #ffffff;
 
-  translate: translateX(100%);
+  transform: translateX(100%);
   transition: transform var(--cubic);
-  .menu__overlay.is__open & {
-    translate: translateX(0);
+
+  .menu__overlay.is-open & {
+    transform: translateX(0);
   }
 }
 

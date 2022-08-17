@@ -516,10 +516,6 @@ img {
 | block 3
 |============================
 */
-.modal__form {
-  padding: 40px;
-}
-
 .modal__label {
   display: block;
   text-align: left;
@@ -547,8 +543,8 @@ img {
   padding-left: 42px;
   width: 100%;
   outline: transparent;
-  -webkit-transition: var(--cubic);
-  transition: var(--cubic);
+  -webkit-transition: color var(--cubic);
+  transition: color var(--cubic);
 }
 .modal__label:hover .modal__input, .modal__label:focus-within .modal__input {
   border-color: var(--accent-text-color);
@@ -570,7 +566,6 @@ img {
   padding-left: 16px;
   padding-top: 12px;
   height: 120px;
-  width: 450px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -587,6 +582,21 @@ img {
   border-color: var(--accent-text-color);
   outline: transparent;
 }
+@media screen and (min-width: 480px) {
+  .modal__textarea {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 758px) {
+  .modal__textarea {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__textarea {
+    width: 450px;
+  }
+}
 
 .modal__checkbox {
   -webkit-box-align: center;
@@ -597,7 +607,6 @@ img {
           justify-content: center;
   gap: 10px;
 }
-
 .modal__checkbox:focus-within {
   fill: var(--accent-text-color);
 }
@@ -676,15 +685,15 @@ img {
   -webkit-transition: opacity var(--cubic), visibility var(--cubic);
   transition: opacity var(--cubic), visibility var(--cubic);
 }
+.menu__overlay.is-open {
+  opacity: 1;
+  pointer-events: initial;
+  visibility: hidden;
+}
 @media screen and (min-width: 758px) {
   .menu__overlay {
     display: none;
   }
-}
-.menu__overlay.is__open {
-  opacity: 1;
-  pointer-events: initial;
-  visibility: hidden;
 }
 
 .menu__container {
@@ -700,14 +709,16 @@ img {
   max-width: 480px;
   padding: 48px 40px;
   background-color: #ffffff;
-  translate: translateX(100%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: -webkit-transform var(--cubic);
   transition: -webkit-transform var(--cubic);
   transition: transform var(--cubic);
   transition: transform var(--cubic), -webkit-transform var(--cubic);
 }
-.menu__overlay.is__open .menu__container {
-  translate: translateX(0);
+.menu__overlay.is-open .menu__container {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .mobile__menu__btn {
@@ -1812,6 +1823,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1830,13 +1845,30 @@ img {
 }
 
 .modal {
+  padding: 40px;
   position: relative;
-  width: 530px;
-  min-height: 580px;
   background: #ffffff;
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 610px;
+  }
+}
+@media screen and (min-width: 758px) {
+  .modal {
+    width: 450px;
+    min-height: 610px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 530px;
+    min-height: 580px;
+  }
 }
 
 .modal__btn {
