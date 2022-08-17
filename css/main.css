@@ -670,6 +670,21 @@ img {
   width: 100%;
   height: 100%;
   z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  -webkit-transition: opacity var(--cubic), visibility var(--cubic);
+  transition: opacity var(--cubic), visibility var(--cubic);
+}
+@media screen and (min-width: 758px) {
+  .menu__overlay {
+    display: none;
+  }
+}
+.menu__overlay.is__open {
+  opacity: 1;
+  pointer-events: initial;
+  visibility: hidden;
 }
 
 .menu__container {
@@ -686,11 +701,12 @@ img {
   padding: 48px 40px;
   background-color: #ffffff;
   translate: translateX(100%);
-  -webkit-transition: var(--cubic);
-  transition: var(--cubic);
+  -webkit-transition: -webkit-transform var(--cubic);
+  transition: -webkit-transform var(--cubic);
+  transition: transform var(--cubic);
+  transition: transform var(--cubic), -webkit-transform var(--cubic);
 }
-
-.menu__container .is__open {
+.menu__overlay.is__open .menu__container {
   translate: translateX(0);
 }
 

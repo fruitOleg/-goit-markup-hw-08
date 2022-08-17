@@ -7,6 +7,20 @@
   height: 100%;
 
   z-index: 100;
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity var(--cubic), visibility var(--cubic);
+
+  @media screen and (min-width: 758px) {
+    display: none;
+  }
+  &.is__open {
+    opacity: 1;
+    pointer-events: initial;
+    visibility: hidden;
+  }
 }
 .menu__container {
   margin-left: auto;
@@ -18,11 +32,12 @@
   background-color: #ffffff;
 
   translate: translateX(100%);
-  transition: var(--cubic);
+  transition: transform var(--cubic);
+  .menu__overlay.is__open & {
+    translate: translateX(0);
+  }
 }
-.menu__container .is__open{
-   translate: translateX(0);
-}
+
 .mobile__menu__btn {
   position: absolute;
   top: 10px;
