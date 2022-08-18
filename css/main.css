@@ -308,6 +308,12 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .list {
@@ -410,7 +416,7 @@ img {
     text-align: center;
   }
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 768px) {
   .foot__email__block {
     text-align: center;
   }
@@ -491,7 +497,7 @@ img {
     display: flex;
   }
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 768px) {
   .foot__email__btn {
     margin-right: auto;
     margin-left: auto;
@@ -587,7 +593,7 @@ img {
     width: 370px;
   }
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 768px) {
   .modal__textarea {
     width: 370px;
   }
@@ -712,7 +718,7 @@ img {
   pointer-events: initial;
   visibility: visible;
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 768px) {
   .menu__overlay {
     display: none;
   }
@@ -943,7 +949,7 @@ img {
 .menu__burger__btn:hover .menu__burger__btn__icon, .menu__burger__btn:focus .menu__burger__btn__icon {
   fill: var(--accent-text-color);
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 768px) {
   .menu__burger__btn {
     display: none;
   }
@@ -1781,7 +1787,7 @@ img {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 768px) {
   .foot--rigth__block {
     margin-bottom: 102px;
   }
@@ -1900,7 +1906,7 @@ img {
     min-height: 610px;
   }
 }
-@media screen and (min-width: 758px) {
+@media screen and (min-width: 768px) {
   .modal {
     width: 450px;
     min-height: 610px;
