@@ -911,6 +911,7 @@ img {
   border: none;
   background-color: transparent;
   padding: 12px 8px;
+  text-align: left;
 }
 .menu__burger__btn__icon {
   -webkit-transition: fill var(--cubic);
