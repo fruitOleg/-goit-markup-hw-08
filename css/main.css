@@ -840,6 +840,13 @@ img {
 | block 4
 |============================
 */
+.flex__nav {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .nav {
   margin-left: 93px;
   gap: 50px;
@@ -1418,26 +1425,17 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (min-width: 480px) {
   .flex__btn {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
   }
 }
 @media screen and (min-width: 768px) {
-  .flex__btn {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
   .flex__btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
