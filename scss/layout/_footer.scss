@@ -10,9 +10,8 @@
   background: var(--dark-bg-color);
 }
 .blocks {
-  @media screen and (min-width: 480px) {
-    flex-direction: column;
-  }
+   flex-direction: column;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -24,8 +23,10 @@
   }
 }
 .foot--left__block {
-  @media screen and (min-width: 480px) and (max-width: 1200px) {
-    margin-bottom: 60px;
+   margin-bottom: 60px;
+   
+@media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 .logo__foot {
@@ -35,16 +36,14 @@
   line-height: 1.1;
   text-decoration: none;
   color: var(--accent-text-color);
-
+   
   &--accent {
     color: #ffffff;
   }
-
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    display: block;
+   display: block;
     font-size: 24px;
     text-align: center;
-  }
+
   @media screen and (min-width: 1200px) {
     display: inline-block;
     padding-left: 0;
@@ -52,7 +51,8 @@
   }
 }
 .list__foot--align {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -89,15 +89,15 @@
 }
 
 .foot--rigth__block {
-  @media screen and (min-width: 480px) {
-    margin-bottom: 60px;
-  }
+   margin-bottom: 60px;
+   
   @media screen and (min-width: 768px) {
     margin-bottom: 102px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-right: auto;
+    margin-bottom: 0;
   }
 }
 .foot__title {

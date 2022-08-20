@@ -12,15 +12,8 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-
-  @media screen and (min-width: 480px) {
-    font-size: 28px;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 28px;
-  }
-
+  font-size: 28px;
+  
   @media screen and (min-width: 1200px) {
     font-size: 36px;
   }
@@ -32,14 +25,9 @@
 }
 
 .section {
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+   padding-top: 60px;
+   padding-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -55,6 +43,7 @@
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 
   @media screen and (min-width: 480px) {
     width: 480px;

@@ -8,14 +8,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-
-  @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
-  }
-
-  @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
-  }
+   flex-wrap: wrap;
 }
 .benefit {
   &__link {
@@ -63,6 +56,9 @@
     @media screen and (min-width: 480px) {
       text-align: center;
     }
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   &__text {
     margin-top: 10px;
@@ -77,5 +73,3 @@
     }
   }
 }
-
-

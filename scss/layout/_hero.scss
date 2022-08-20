@@ -28,12 +28,6 @@
     width: 360px;
     font-size: 26px;
   }
-
-  @media screen and (min-width: 768px) {
-    width: 360px;
-    font-size: 26px;
-  }
-
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     width: 700px;
@@ -68,9 +62,9 @@
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+   
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/bg/img@1x_sm.jpg);
 
@@ -78,6 +72,7 @@
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/bg/img@2x_sm.jpg);
     }
+    background-size: cover;
   }
 
   @media screen and (min-width: 768px) {
@@ -88,6 +83,7 @@
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/bg/img@2x_md.jpg);
     }
+    background-size: cover;
   }
 
   @media screen and (min-width: 1200px) {
@@ -98,5 +94,6 @@
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/bg/img@2x_lg.jpg);
     }
+     max-width: 1600px;
   }
 }

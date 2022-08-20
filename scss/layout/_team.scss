@@ -18,14 +18,7 @@
 }
 .list__team {
   gap: 30px;
-
-  @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
-  }
-
-  @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
-  }
+   flex-wrap: wrap;
 }
 .team__text {
   margin-top: 10px;

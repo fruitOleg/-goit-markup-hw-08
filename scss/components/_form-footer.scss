@@ -5,12 +5,8 @@
 */
 
 .foot__email__block {
-  @media screen and (min-width: 480px) {
-    text-align: center;
-  }
-  @media screen and (min-width: 768px) {
-    text-align: center;
-  }
+  text-align: center;
+
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
     text-align: left;
@@ -26,10 +22,12 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  width: 100%;
 
-  @media screen and (min-width: 480px) and (max-width: 1200px) {
+   @media screen and (min-width: 480px) {
     width: 450px;
   }
+  
   @media screen and (min-width: 1200px) {
     width: 360px;
   }
@@ -67,18 +65,11 @@
     fill: #fff;
   }
 
-  @media screen and (min-width: 480px) {
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-  }
-  @media screen and (min-width: 768px) {
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    display: flex;
-  }
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+
   @media screen and (min-width: 1200px) {
     display: inline-flex;
     margin-right: 12px;
