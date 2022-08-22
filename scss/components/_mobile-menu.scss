@@ -106,12 +106,15 @@
 
   &__tel {
     font-family: var(--main-fonts);
-    font-size: 34px;
-    line-height: 40px;
+   font-size: 28px;
     line-height: 100%;
     letter-spacing: 2%;
     text-decoration: none;
     color: var(--accent-text-color);
+
+    @media screen and (min-width: 480px) {
+      font-size: 34px;
+    }
   }
 
   &__mail {
@@ -125,18 +128,21 @@
   }
 }
 .mobile__social__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
   gap: 10px;
+
 
   &__link {
     font-family: var(--main-fonts);
-    font-size: 18px;
+    font-size: 12px;
     line-height: 22px;
-    line-height: 104%;
     letter-spacing: 2%;
     text-decoration: none;
     color: var(--accent-text-color);
+
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+    }
   }
   &__item:not(:last-child) {
     display: flex;

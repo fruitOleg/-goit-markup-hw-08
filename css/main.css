@@ -535,7 +535,8 @@ img {
 .modal__textarea {
   padding-left: 16px;
   padding-top: 12px;
-  height: 120px;
+  height: 60px;
+  width: 270px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -554,16 +555,13 @@ img {
 }
 @media screen and (min-width: 480px) {
   .modal__textarea {
-    width: 370px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .modal__textarea {
+    height: 120px;
     width: 370px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal__textarea {
+    height: 120px;
     width: 450px;
   }
 }
@@ -604,19 +602,19 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-size: 9px;
+  line-height: 10px;
 }
 @media screen and (min-width: 480px) {
   .modal__licens__text {
     font-size: 12px;
     line-height: 14px;
-    letter-spacing: 3%;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal__licens__text {
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.03em;
   }
 }
 
@@ -643,7 +641,7 @@ img {
 
 .modal__form__btn {
   display: block;
-  margin: 30px auto 0;
+  margin: 20px auto 0;
   width: 200px;
   height: 50px;
   background: #2196f3;
@@ -659,6 +657,11 @@ img {
   color: #ffffff;
   -webkit-transition: var(--cubic);
   transition: var(--cubic);
+}
+@media screen and (min-width: 480px) {
+  .modal__form__btn {
+    margin: 30px auto 0;
+  }
 }
 .modal__form__btn:hover, .modal__form__btn:focus {
   background-color: #188ce8;
@@ -788,12 +791,16 @@ img {
 }
 .mobile__list__contacts__tel {
   font-family: var(--main-fonts);
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 28px;
   line-height: 100%;
   letter-spacing: 2%;
   text-decoration: none;
   color: var(--accent-text-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile__list__contacts__tel {
+    font-size: 34px;
+  }
 }
 .mobile__list__contacts__mail {
   font-family: var(--main-fonts);
@@ -806,21 +813,23 @@ img {
 }
 
 .mobile__social__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   gap: 10px;
 }
 .mobile__social__list__link {
   font-family: var(--main-fonts);
-  font-size: 18px;
+  font-size: 12px;
   line-height: 22px;
-  line-height: 104%;
   letter-spacing: 2%;
   text-decoration: none;
   color: var(--accent-text-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile__social__list__link {
+    font-size: 18px;
+  }
 }
 .mobile__social__list__item:not(:last-child) {
   display: -webkit-box;
@@ -1590,15 +1599,21 @@ img {
 .portfolio__text--overlay {
   font-family: var(--main-fonts);
   font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 12px;
+  line-height: 20px;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .portfolio__text--overlay {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .portfolio--overlay {
   position: absolute;
-  padding: 63px 24px;
+  padding: 24px;
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
@@ -1608,6 +1623,11 @@ img {
   transition: -webkit-transform var(--cubic);
   transition: transform var(--cubic);
   transition: transform var(--cubic), -webkit-transform var(--cubic);
+}
+@media screen and (min-width: 480px) {
+  .portfolio--overlay {
+    padding: 63px 24px;
+  }
 }
 .portfolio__card:hover .portfolio--overlay, .portfolio__card:focus .portfolio--overlay {
   -webkit-transform: translateY(-100%);
@@ -1836,7 +1856,9 @@ img {
 }
 
 .modal {
-  padding: 40px;
+  padding: 50px 20px;
+  width: 310px;
+  height: 560px;
   position: relative;
   background: #ffffff;
   border-radius: 4px;
@@ -1847,18 +1869,14 @@ img {
   .modal {
     width: 450px;
     min-height: 610px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 450px;
-    min-height: 610px;
+    padding: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 530px;
     min-height: 580px;
+    padding: 40px;
   }
 }
 

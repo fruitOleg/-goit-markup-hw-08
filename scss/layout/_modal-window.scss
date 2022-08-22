@@ -29,7 +29,10 @@
   }
 }
 .modal {
-   padding: 40px;
+  padding: 50px 20px;
+  width: 310px;
+  height: 560px;
+
   position: relative;
 
   background: #ffffff;
@@ -41,14 +44,12 @@
   @media screen and (min-width: 480px) {
     width: 450px;
     min-height: 610px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 450px;
-    min-height: 610px;
+    padding: 40px;
   }
   @media screen and (min-width: 1200px) {
     width: 530px;
     min-height: 580px;
+    padding: 40px;
   }
 }
 .modal__btn {

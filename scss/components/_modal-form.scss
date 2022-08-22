@@ -53,7 +53,8 @@
 .modal__textarea {
   padding-left: 16px;
   padding-top: 12px;
-  height: 120px;
+  height: 60px;
+  width: 270px;
 
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -72,13 +73,13 @@
     border-color: var(--accent-text-color);
     outline: transparent;
   }
+
   @media screen and (min-width: 480px) {
-    width: 370px;
-  }
-  @media screen and (min-width: 768px) {
+    height: 120px;
     width: 370px;
   }
   @media screen and (min-width: 1200px) {
+    height: 120px;
     width: 450px;
   }
 }
@@ -110,15 +111,16 @@
   font-weight: 400;
   color: #757575;
   user-select: none;
+  font-size: 9px;
+  line-height: 10px;
+
   @media screen and (min-width: 480px) {
     font-size: 12px;
     line-height: 14px;
-    letter-spacing: 3%;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.03em;
   }
 }
 .modal__licens__link {
@@ -126,7 +128,7 @@
   font-weight: 400;
   color: #2196f3;
   text-underline-position: under;
-  
+
   @media screen and (min-width: 480px) {
     font-size: 12px;
     line-height: 14px;
@@ -140,7 +142,7 @@
 }
 .modal__form__btn {
   display: block;
-  margin: 30px auto 0;
+  margin: 20px auto 0;
   width: 200px;
   height: 50px;
 
@@ -156,6 +158,10 @@
   letter-spacing: 0.06em;
   color: #ffffff;
   transition: var(--cubic);
+
+  @media screen and (min-width: 480px) {
+    margin: 30px auto 0;
+  }
 
   &:hover,
   &:focus {
